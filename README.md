@@ -24,8 +24,8 @@ authenticate/index.php does the following:
   
 SimpleScene displays the code on the screen of the Roku and tells user to enter code and agent ID number at activate/index.html
 
-activate/index.html takes input values code and agent ID number and passes to authenticate/activation.php and dose the following:
+activate/index.html takes input values code and agent ID number and passes to authenticate/activation.php and does the following:
 * sanitizes input;
 * checks agent ID: is the agent in the subscriber db? 
 * checks agent ID for number of entries. Agents are allowed 2 devices per subscription, so values of 0 and 1 are acceptable
-  
+* checks code entered: if in db, linked = yes  
